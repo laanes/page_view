@@ -34,10 +34,9 @@ $name 	= $view . "_name";
 $desc   = $view . "_description";
 $title  = $view . "_title";
 
-$template->assign(strtoupper( $id ), $$obj->$id );
-$template->assign(strtoupper($name), $$obj->name);
-$template->assign(strtoupper($desc), $$obj->desc);
-
+$template->assign(strtoupper( $id   ), $$obj->$id  );
+$template->assign(strtoupper( $name ), $$obj->$name );
+$template->assign(strtoupper( $desc ), $$obj->$desc );
 
 /* Range title */
 if($$obj->$view . "_title") {
